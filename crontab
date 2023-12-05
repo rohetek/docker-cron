@@ -1,4 +1,4 @@
 # must be ended with a new line "LF" (Unix) and not "CRLF" (Windows)
-* * * * * curl http://crm.hctaxfinancial.com:8080 >/proc/1/fd/1 2>/proc/1/fd/2
-
+* * * * * curl http://crm.hctaxfinancial.com:8080 >/workspace/application/artisan schedule:run >> /dev/null 2>&1
+# /usr/local/bin/php /workspace/application/artisan schedule:run >> /dev/null 2>&1
 # An empty line is required at the end of this file for a valid cron file.
