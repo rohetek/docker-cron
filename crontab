@@ -5,5 +5,5 @@
 #* * * * * /usr/local/bin/php /workspace/application/artisan schedule:run >> /dev/null 2>&1
 #/application/artisan schedule:run >> /dev/null 2>&1
 #* * * * *  /cron schedule:run >> /dev/null 2>&1
-* * * * * cd /application && php artisan schedule:run >> /dev/null 2>&1
+* * * * * cd /workspace/application && php artisan schedule:run >> /dev/null 2>&1
 # An empty line is required at the end of this file for a valid cron file.
