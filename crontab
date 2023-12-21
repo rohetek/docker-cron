@@ -1,7 +1,7 @@
 # must be ended with a new line "LF" (Unix) and not "CRLF" (Windows)
-* * * * * curl https://crm-hcfs-app-mvx9s.ondigitalocean.app/cron >>  2>&1
+#* * * * * curl https://crm-hcfs-app-mvx9s.ondigitalocean.app/cron >>  2>&1
 #* * * * * curl https://crm-hcfs-app-mvx9s.ondigitalocean.app/cron >/proc/1/fd/1 2>/proc/1/fd/2
-#* * * * * curl https://crm.hctaxfinancial.com/cron >/proc/1/fd/1 2>/proc/1/fd/2
+* * * * * curl https://crm.hctaxfinancial.com/cron >/proc/1/fd/1 2>/proc/1/fd/2
 #* * * * * /usr/local/bin/php /workspace/application/artisan schedule:run >> /dev/null 2>&1
 #/application/artisan schedule:run >> /dev/null 2>&1
 #* * * * *  http://crm-rh/application/artisan schedule:run >> /dev/null 2>&1
